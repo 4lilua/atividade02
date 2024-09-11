@@ -27,16 +27,6 @@ migrate = Migrate(app, db)
 def index(): 
     return render_template('index.html')
 
-@app.route('/form')
-def form():
-    return render_template('form.html')
-
-@app.route('/dados',methods=['POST'])
-def dados():
-    flash('Dados enviados!!!')
-    dados = request.form
-    return render_template('dados.html', dados=dados)
-
 @app.route('/usuario')
 def usuario():
     u = Usuario.query.all()
@@ -84,11 +74,11 @@ def usuario_edita_save():
     email = request.form.get('email')
     telefone = request.form.get('telefone')
     id = request.form.get('id')
-    if id and nome and email and idade:
+    if id and nome and email and telefone:
         usuario = Usuario.query.get(id)
         usuario.nome = nome
         usuario.email = email
-        usuario.idade = idade
+        usuario.telefone = telefone
         db.session.commit()
         flash('Dados atualizados com sucesso!!!')
         return redirect('/usuario')

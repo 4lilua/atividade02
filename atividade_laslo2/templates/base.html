@@ -7,22 +7,23 @@
     <link rel="stylesheet" href="{{url_for('static', filename = 'css/estilo.css')}}">
 </head>
 <body>
+    <header>
+        <h1 class="banner_text">Crud Flask - Aline</h1>
+    </header>
+
     <nav>
-        <ul>
-            <li>
-                <a href="/">Home</a>
-            </li>
-            <li>
-                <a href="/form">Formulário</a>
-            </li>
-            <li>
-                <a href="/usuario">Usuário</a>
-            </li>
-        </ul>
+        <div class="links_nav">
+            <a href="/">Home</a>
+            <a href="/usuario">Usuário</a>
+        </div>
     </nav>
     <main>
         {% block conteudo %}
+
         {% endblock %}
     </main>
+    <footer>
+        <p>© copyleft</p>
+    </footer>
 </body>
 </html>

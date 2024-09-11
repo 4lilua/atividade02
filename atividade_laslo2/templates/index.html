@@ -1,45 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="atividade.css">
+{% extends "base.html" %}
 
-</head>
-<body>
-    <header>
-        <section class="banner">
-            <h1 class="banner_text">CEFET-MG - Campus Varginha - Curso Técnico</h1>
-        </section>
+{% block conteudo %}
 
-        <nav>
-            <div class="links_nav">
-                <a href="index.html">Início</a>
-                <a href="curso.html">Curso</a>
-                <a href="faq.html">FAQ</a>
-                <a href="contato.html">Contato</a>
-            </div>
-        </nav>
-    </header>
+    <section>
+        <h1 class="titulo">Site Clientes da Aline</h1>
+        <img class="img1" src="{{url_for('static', filename = 'img/sticker.png')}}" alt="">
+    </section>
+    <section>
+        <img class="img2" src= "{{url_for('static', filename = 'img/sticker2.gif')}}" alt="">
+    </section>
 
-    <main class="main_textos">
-        {% extends "base.html" %}
+{% endblock %}
 
-        {% block conteudo %}
-        
-            Estou no Index
-        
-            <img src="{{url_for('static', filename = 'img/baby.gif')}}" alt="Aula">
-            
-        {% endblock %}
-    </main>
-    
-    <footer>
-        <p>© copyleft </p>
-    </footer>
-</body>
-</html>
 
 
 
