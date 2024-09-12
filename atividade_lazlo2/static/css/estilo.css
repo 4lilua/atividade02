@@ -1,0 +1,202 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+:root {
+    --black: #000;
+    --white: #fff;
+}
+
+header{
+    height: 10rem;
+    background-image: url('/static/img/banner.jpg');
+    background-size: cover;
+    height: 7rem;
+}
+
+.banner_text{
+    text-shadow: 2px 2px var(--black);
+    color: var(--white);
+    text-align: center;
+    padding-top: 2rem;
+    font-size: 2.3rem;
+}
+
+.links_nav{
+    background-image: radial-gradient(#152cd5, #ffffff);
+    padding-left: 42rem;
+    padding-right: 42rem;
+    height: 2.2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.links_nav a{
+    padding-top: 0.1rem;
+    text-decoration: none;
+    font-size: 1.7rem;
+    color: var(--white);
+    align-items: center;
+}
+
+main{
+    background-color: var(--white);
+    min-height: calc(100vh - 12.2rem);
+    background-size: auto;
+}
+
+main section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    padding-top: 2rem;
+}
+
+main section img{
+    height: 5rem;
+    width: 5rem;
+}
+
+.img2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30rem;
+    width: 30rem;
+}
+
+
+/* Formulários */
+
+form{
+    padding-top: 10rem;
+}
+
+fieldset{
+    border: 2px solid #5367fd;
+    border-radius: 0.5rem;
+    background-image: radial-gradient(#9ca8ff, #ffffff);
+    width: fit-content;
+    height: fit-content;
+    flex-direction: column;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+fieldset div{
+    display: flex;
+    flex-direction: row;
+    margin-top: 0.8rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+fieldset div button{
+    margin-bottom: 0.5rem;
+}
+
+fieldset div label{
+    display: flex;
+    align-items: center;
+    padding-right: 0.8rem;
+    border-radius: 1rem;
+}
+
+.formulario{
+    display: flex;
+    align-items: end;
+    justify-content: right;
+}
+
+.tam_fonte{
+    font-size: 1.5rem;
+}
+
+.tam_fonte2{
+    font-size: 1.1rem;
+    height: 1.5rem;
+}
+
+input{
+    display: block;
+    background-color: var(--white);
+    border-radius: 0.2rem;
+}
+
+input:hover{
+    display: block;
+    background-image: radial-gradient(#45ff45, #ffffff);
+    border-radius: 0.2rem;
+}
+
+button:hover{
+    background-image: radial-gradient(#45ff45, #ffffff);
+    border-radius: 0.2rem;
+}
+
+
+/* Tabelas */
+
+a, input{
+    display: block;
+}
+
+img{
+    width: 250px;
+}
+
+table, tr, td, th{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px ;
+}
+
+table{
+    margin: auto;
+}
+
+.add{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3rem;
+}
+
+.add a{
+    text-decoration: none;
+    color: var(--black);
+    font-size: 1.5rem;
+}
+
+table tr td a{
+    text-decoration: none;
+    color: #152cd5;
+}
+
+.msn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 15rem;
+    width: 15rem;
+}
+
+footer{
+    background-image: radial-gradient(#152cd5, #ffffff);
+    height: 3rem;
+    color: var(--white);
+    font-size: 1.7rem;
+    align-items: center;
+    display: flex;
+}
+
+
+
+
+

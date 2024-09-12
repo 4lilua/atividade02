@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web</title>
+    <link rel="stylesheet" href="{{url_for('static', filename = 'css/estilo.css')}}">
+</head>
+<body>
+    <header>
+        <h1 class="banner_text">Crud Flask - Aline</h1>
+    </header>
+
+    <nav>
+        <div class="links_nav">
+            <a href="/">Home</a>
+            <a href="/usuario">Cliente</a>
+        </div>
+    </nav>
+    <main>
+        {% block conteudo %}
+
+        {% endblock %}
+    </main>
+    <footer>
+        <p>© copyleft</p>
+    </footer>
+</body>
+</html>
